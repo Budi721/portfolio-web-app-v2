@@ -15,7 +15,7 @@ export const Certificates = () => {
       <SectionHeader title="Certificates" dir="r" />
 
       <div>
-        <Reveal>
+        <Reveal width="w-full">
           <section className="p-4 bg-indigo-600">
             <div
               className="flex flex-col lg:flex-row h-fit lg:h-[450px] w-full max-w-6xl mx-auto shadow overflow-hidden">

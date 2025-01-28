@@ -43,7 +43,7 @@ export const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) =
             }}
             className="w-full h-full overflow-hidden relative bg-black flex items-end"
           >
-            <motion.div
+            {width && width > 1024 && <motion.div
               variants={descriptionVariants}
               initial="closed"
               animate="open"
@@ -51,7 +51,7 @@ export const Panel = ({ open, setOpen, id, Icon, title, imgSrc, description }) =
               className="px-4 py-2 bg-black/40 backdrop-blur-sm text-white"
             >
               <p>{description}</p>
-            </motion.div>
+            </motion.div>}
           </motion.div>
         )}
       </AnimatePresence>
